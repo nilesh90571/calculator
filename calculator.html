@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+        body{
+            background-image:url("image3.png"); 
+        }
+        </style>
+<script>
+ function eqal(){
+     var p=document.getElementById("A").value
+     document.getElementById("A").value=eval(p)
+ }
+function seven(){
+    document.getElementById("A").value+="7";
+}
+function six(){
+    document.getElementById("A").value+="6";
+}
+function five(){
+    document.getElementById("A").value+="5";
+}
+function four(){
+    document.getElementById("A").value+="4";
+}
+function three(){
+    document.getElementById("A").value+="3";
+}
+function two(){
+    document.getElementById("A").value+="2";
+}
+function one(){
+    document.getElementById("A").value+="1";
+}
+function eight(){
+    document.getElementById("A").value+="8";
+}
+function nine(){
+    document.getElementById("A").value+="9";
+}
+function mul(){
+    document.getElementById("A").value+="*";
+}
+function sub(){
+    document.getElementById("A").value+="-";
+}
+function add(){
+    document.getElementById("A").value+="+";
+}
+function dot(){
+    document.getElementById("A").value+=".";
+}
+function Reset(){
+    document.getElementById("A").value="";
+}
+function back(){
+    var prevalue=document.getElementById("A").value
+   document.getElementById("A").value=prevalue.substr(0,prevalue.length-1);
+}
+function zero(){
+    document.getElementById("A").value+="0";
+}
+function AC(){
+    document.getElementById("A").value="0";
+}
+function divide(){
+    document.getElementById("A").value+="/";
+}
+</script>
+<body>
+        <div class="calc" style=" border:2px solid black ; "align="center">
+        <legend style="font-weight:bold;font-size:30px;padding-top:30px">CALCULATOR</legend>
+    <fieldset style="height:450px;width:350px;background-color:parr;" align="center">
+            <div style="margin-top:50px">
+    <input type="text" id="A"><br><br>
+    <input type="submit" value="7" onclick="seven()">
+    <input type="submit" value="8" onclick="eight()">
+    <input type="submit" value="9" onclick="nine()">
+    <input type="submit" value="*" onclick="mul()"><br><br>
+    <input type="submit" value="4" onclick="four()">
+    <input type="submit" value="5" onclick="five()">
+    <input type="submit" value="6" onclick="six()">
+    <input type="submit" value="-" onclick="sub()"><br><br> 
+    <input type="submit" value="1" onclick="one()">
+    <input type="submit" value="2" onclick="two()">
+    <input type="submit" value="3" onclick="three()">
+    <input type="submit" value="+" onclick="add()"><br><br>
+    <input type="submit" value="0" onclick="zero()">
+    <input type="submit" value="." onclick="dot()">
+    <input type="submit" value="/" onclick="divide()">
+    <input type="submit" value="=" onclick="eqal()"><br><br>
+    <input type="submit" value="Reset" onclick="Reset()">
+    <input type="submit" value="del" onclick="back()">
+    <input type="submit" value="AC" onclick="AC()">
+</fieldset>
+</div>
+</body>
+</html>
